@@ -56,9 +56,9 @@ main {
 
     width: 85%;
     max-width: 1450px;
-    min-height: 600px;
-    height: 600px;
-    max-height: 700px;
+    min-height: 500px;
+    height: 500px;
+    max-height: 600px;
     margin: 0 auto;
 
     display: grid;
@@ -237,7 +237,7 @@ main {
 
 /* QUERIES */
 
-@media (max-width: 1370px) {
+@media (max-width: 1300px) {
     .container {
         top: 10%;
         transform: translate(-50%, -10%);
