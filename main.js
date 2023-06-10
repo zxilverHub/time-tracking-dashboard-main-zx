@@ -111,6 +111,10 @@ const titles = document.querySelectorAll('.title'),
       menu = document.querySelector('.menu ul'),
       menuBtn = document.querySelectorAll('.menu ul li');
 
+      titles.forEach((t, i) => {
+        weeklyHrs(i);
+      })
+
 menu.addEventListener('click', (e) => {
     let id  = e.target.id;
 
@@ -122,6 +126,8 @@ menu.addEventListener('click', (e) => {
 
     let btn = e.target;
     btn.classList.toggle('click');
+
+    
 
     titles.forEach((t, i) => {
         t.innerHTML = datas[i].title;
